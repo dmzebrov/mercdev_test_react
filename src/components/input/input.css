@@ -1,0 +1,33 @@
+.input {
+  width: 100%;
+  height: 48px;
+  padding: 14px 16px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #262626;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.input::placeholder {
+  font-size: 16px;
+  opacity: 0.4;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input_error {
+  box-shadow: none;
+  color: #ed4159;
+  border: 1px solid #ed4159;
+}
+
+.input:-moz-ui-invalid {
+  box-shadow: none;
+  color: #ed4159;
+  border: 1px solid #ed4159;
+}

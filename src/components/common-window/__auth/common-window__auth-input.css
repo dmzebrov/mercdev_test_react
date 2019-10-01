@@ -1,0 +1,13 @@
+.common-window__auth-input {
+  margin-top: 32px;
+}
+
+.common-window__auth-input:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 650px) {
+  .common-window__auth-input {
+    margin-top: 24px;
+  }
+}

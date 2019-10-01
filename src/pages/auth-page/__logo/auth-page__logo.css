@@ -1,0 +1,13 @@
+.auth-page__logo {
+  width: 315px;
+  height: 69px;
+  margin-bottom: 125px;
+}
+
+@media screen and (max-width: 650px) {
+  .auth-page__logo {
+    width: 182px;
+    height: 40px;
+    margin-bottom: 37px;
+  }
+}

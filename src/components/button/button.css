@@ -1,0 +1,41 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: auto;
+  padding: 0 32px;
+  background-color: #ed4159;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0 4px 16px 0 rgba(237, 65, 89, 0.4);
+  color: #fff;
+  font-family: "Gotham", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.button_button-hover:hover {
+  color: #ed4159;
+  box-shadow: 0 6px 20px 0 rgba(237, 65, 89, 0.4);
+  background-color: #ffffff;
+}
+
+.button:active {
+  color: #ed4159;
+  box-shadow: 0 6px 20px 0 rgba(237, 65, 89, 0.4);
+  background-color: #ffffff;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button::-moz-focus-inner {
+  border: 0;
+}
+
+.button_logged-in {
+  margin-top: 56px;
+}
