@@ -3,9 +3,39 @@
   padding: 48px 48px 60px;
 }
 
+.common-window__auth-input {
+  margin-top: 32px;
+}
+
+.common-window__auth-input:first-child {
+  margin-top: 0;
+}
+
+.common-window__auth-error {
+  margin-top: 32px;
+}
+
+.common-window__login-button {
+  margin-top: 48px;
+}
+
+
+
 @media screen and (max-width: 650px) {
   .common-window__auth {
     width: 288px;
     padding: 32px 24px 48px;
+  }
+
+  .common-window__auth-input {
+    margin-top: 24px;
+  }
+
+  .common-window__auth-error {
+    margin-top: 24px;
+  }
+
+  .common-window__login-button {
+    margin-top: 40px;
   }
 }
