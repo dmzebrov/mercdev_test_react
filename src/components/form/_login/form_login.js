@@ -66,7 +66,7 @@ class FormLogin extends React.Component {
           placeholder="E-Mail"
           classNames="common-window__auth-input"
           handleChange={this.handleChange}
-        ></Input>
+        />
         <Input
           type="password"
           name="password"
@@ -75,7 +75,7 @@ class FormLogin extends React.Component {
           minLength="3"
           maxLength="15"
           handleChange={this.handleChange}
-        ></Input>
+        />
 
         {error}
 
@@ -83,7 +83,7 @@ class FormLogin extends React.Component {
           buttonType="input"
           value="Login"
           classNames="common-window__login-button"
-        ></Button>
+        />
       </form>
     );
   }

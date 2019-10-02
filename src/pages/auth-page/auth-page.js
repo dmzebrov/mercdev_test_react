@@ -66,12 +66,12 @@ class AuthPage extends React.Component {
         photoUrl={this.state.photoUrl}
         name={this.state.name}
         logout={this.logout}
-      ></CommonWindowProfile>
+      />
     ) : (
       <CommonWindowAuth
         login={this.login}
         displayError={this.state.loginError}
-      ></CommonWindowAuth>
+      />
     );
 
     return (

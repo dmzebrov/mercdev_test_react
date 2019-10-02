@@ -66,7 +66,7 @@ class Input extends React.Component {
         value={this.state.value}
         onBlur={this.handleBlur}
         onChange={this.handleChange}
-      ></input>
+      />
     );
   }
 }
