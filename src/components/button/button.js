@@ -7,7 +7,7 @@ class Button extends React.Component {
     if (this.props.buttonType === "input") {
       return (
         <input
-          className={"button " + this.props.classNames}
+          className={"button " + this.props.className}
           type="submit"
           value={this.props.value}
         />
@@ -16,7 +16,7 @@ class Button extends React.Component {
     if (!this.props.buttonType || this.props.buttonType === "button") {
       return (
         <button
-          className={"button " + this.props.classNames}
+          className={"button " + this.props.className}
           onClick={this.props.handleClick}
         >
           {this.props.children}

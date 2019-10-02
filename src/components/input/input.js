@@ -59,7 +59,7 @@ class Input extends React.Component {
     });
     return (
       <input
-        className={inputClass + " " + this.props.classNames}
+        className={inputClass + " " + this.props.className}
         type={this.props.type}
         name={this.props.name}
         placeholder={this.props.placeholder}
