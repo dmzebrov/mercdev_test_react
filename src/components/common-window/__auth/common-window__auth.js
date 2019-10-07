@@ -14,7 +14,10 @@ class CommonWindowAuth extends React.Component {
       <div className="common-window__auth">
         <h3 className="common-window__title">Log In</h3>
 
-        <FormLogin login={this.props.login} displayError={this.props.displayError}></FormLogin>
+        <FormLogin
+          login={this.props.login}
+          displayError={this.props.displayError}
+        ></FormLogin>
       </div>
     );
   }

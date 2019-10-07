@@ -57,12 +57,12 @@ class Input extends React.Component {
 
     var inputClass = classNames({
       input: true,
-      input_error: this.state.displayError && this.state.error,
+      input_error: this.state.displayError && this.state.error
     });
 
     return (
       <input
-        className={ classNames(inputClass, className) }
+        className={classNames(inputClass, className)}
         type={type}
         name={name}
         placeholder={placeholder}

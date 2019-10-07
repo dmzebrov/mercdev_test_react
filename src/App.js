@@ -1,7 +1,7 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-import AuthPage from './pages/auth-page/auth-page.js';
+import AuthPage from "./pages/auth-page/auth-page.js";
 
 class App extends React.Component {
   render() {
@@ -9,7 +9,7 @@ class App extends React.Component {
       <>
         <AuthPage></AuthPage>
       </>
-    )
+    );
   }
 }
 export default App;

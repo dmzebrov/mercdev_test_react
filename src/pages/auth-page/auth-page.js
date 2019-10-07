@@ -35,7 +35,7 @@ class AuthPage extends React.Component {
         if (result.error) {
           this.setState({
             loginError: true
-          })
+          });
         } else {
           this.setState({
             photoUrl: result.photoUrl,
@@ -48,7 +48,7 @@ class AuthPage extends React.Component {
       .catch(error => {
         this.setState({
           loginError: true
-        })
+        });
       });
   }
 
