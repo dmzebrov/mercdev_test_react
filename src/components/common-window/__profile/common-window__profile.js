@@ -23,8 +23,7 @@ class CommonWindowProfile extends React.Component {
 
         <Button
           className="common-window__logout-button"
-          buttonType="button"
-          handleClick={this.props.logout}
+          onClick={this.props.logout}
         >
           Logout
         </Button>

@@ -79,11 +79,7 @@ class FormLogin extends React.Component {
 
         {error}
 
-        <Button
-          buttonType="input"
-          value="Login"
-          className="common-window__login-button"
-        />
+        <Button className="common-window__login-button">Login</Button>
       </form>
     );
   }
