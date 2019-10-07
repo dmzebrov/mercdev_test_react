@@ -2,13 +2,13 @@ import React from "react";
 import "./input.css";
 
 var classNames = require("classnames");
-var inputVerification = require("utilities/input-verification");
+var inputvalidation = require("utilities/input-validation");
 
 class Input extends React.Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
-    this.verificateInput = this.verificateInput.bind(this);
+    this.validate = this.validate.bind(this);
     this.handleBlur = this.handleBlur.bind(this);
 
     this.state = {
@@ -22,7 +22,7 @@ class Input extends React.Component {
     var inputType = e.target.type;
     var inputValue = e.target.value;
 
-    var inputError = this.verificateInput(e, inputType, inputValue);
+    var inputError = this.validate(e, inputType, inputValue);
 
     this.setState({
       value: inputValue,
@@ -32,12 +32,12 @@ class Input extends React.Component {
     this.props.handleChange(e, inputError);
   }
 
-  verificateInput(e, inputType, inputValue) {
+  validate(e, inputType, inputValue) {
     if (inputType === "email") {
-      return !inputVerification.email(inputValue);
+      return !inputvalidation.email(inputValue);
     }
     if (inputType === "password") {
-      return !inputVerification.password(
+      return !inputvalidation.password(
         inputValue,
         this.props.minLength,
         this.props.maxLength,
