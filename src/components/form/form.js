@@ -12,10 +12,4 @@ class Form extends React.Component {
   }
 }
 
-function Form({ children, className, ...otherProps }) {
-  return(
-    <form className={ classNames("form", className) } {...otherProps} />
-  )
-}
-
 export default Form;
