@@ -6,7 +6,7 @@ var classNames = require("classnames");
 function CommonWindow({ className, ...ohterProps }) {
   return (
     <div className={classNames("common-window", className)} {...ohterProps} />
-  )
+  );
 }
 
 export default CommonWindow;
