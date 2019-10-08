@@ -3,8 +3,8 @@ import "./input.css";
 
 import classNames from "classnames";
 import {
-  emailValidation,
-  passwordValidation
+  validateEmail,
+  validatePassword
 } from "utilities/input-validation";
 
 class Input extends React.Component {
@@ -37,10 +37,10 @@ class Input extends React.Component {
 
   validate(e, inputType, inputValue) {
     if (inputType === "email") {
-      return !emailValidation(inputValue);
+      return !validateEmail(inputValue);
     }
     if (inputType === "password") {
-      return !passwordValidation(
+      return !validatePassword(
         inputValue,
         this.props.minLength,
         this.props.maxLength,
