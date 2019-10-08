@@ -56,7 +56,7 @@ class Input extends React.Component {
   }
 
   render() {
-    const { className, ...otherProps } = this.props;
+    const { className, handleChange, ...otherProps } = this.props;
 
     var inputClass = classNames({
       input: true,
