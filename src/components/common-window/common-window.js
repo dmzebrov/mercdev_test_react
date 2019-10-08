@@ -1,7 +1,7 @@
 import React from "react";
 import "./common-window.css";
 
-var classNames = require("classnames");
+import classNames from "classnames";
 
 function CommonWindow({ className, ...ohterProps }) {
   return (

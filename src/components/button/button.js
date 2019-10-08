@@ -1,7 +1,7 @@
 import React from "react";
 import "./button.css";
 
-var classNames = require("classnames");
+import classNames from "classnames";
 
 function Button({ className, ...otherProps }) {
   return <button className={classNames("button", className)} {...otherProps} />;

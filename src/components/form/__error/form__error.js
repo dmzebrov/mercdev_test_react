@@ -1,7 +1,7 @@
 import React from "react";
 import "./form__error.css";
 
-var classNames = require("classnames");
+import classNames from "classnames";
 
 function FormError({ className, children, ...otherProps }) {
   return (
