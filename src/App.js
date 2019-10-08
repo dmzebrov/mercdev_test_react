@@ -6,9 +6,7 @@ import AuthPage from "./pages/auth-page/auth-page.js";
 class App extends React.Component {
   render() {
     return (
-      <>
-        <AuthPage></AuthPage>
-      </>
+      <AuthPage></AuthPage>
     );
   }
 }
