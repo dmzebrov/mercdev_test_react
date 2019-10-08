@@ -56,7 +56,7 @@ class Input extends React.Component {
   }
 
   render() {
-    const { className, type, name, placeholder } = this.props;
+    const { className, ...otherProps } = this.props;
 
     var inputClass = classNames({
       input: true,
@@ -66,12 +66,10 @@ class Input extends React.Component {
     return (
       <input
         className={classNames(inputClass, className)}
-        type={type}
-        name={name}
-        placeholder={placeholder}
         value={this.state.value}
         onBlur={this.handleBlur}
         onChange={this.handleChange}
+        {...otherProps}
       />
     );
   }
