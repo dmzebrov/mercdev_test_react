@@ -1,13 +1,12 @@
 import React from "react";
 
-import AuthPageBackground from "./__background/auth-page__background";
-import AuthPageLogo from "./__logo/auth-page__logo";
+import background from "files/background.png";
+import logo from "files/w-mercury-development.svg";
 import CommonWindow from "components/common-window/common-window";
 import CommonWindowAuth from "components/common-window/__auth/common-window__auth";
 import CommonWindowProfile from "components/common-window/__profile/common-window__profile";
 
-import "./__container/auth-page__container.css";
-import "./__content/auth-page__content.css";
+import "./auth-page.css";
 
 class AuthPage extends React.Component {
   constructor(props) {
@@ -36,7 +35,7 @@ class AuthPage extends React.Component {
         if (result.error) {
           this.setState({
             loginError: true
-          })
+          });
         } else {
           this.setState({
             photoUrl: result.photoUrl,
@@ -49,7 +48,7 @@ class AuthPage extends React.Component {
       .catch(error => {
         this.setState({
           loginError: true
-        })
+        });
       });
   }
 
@@ -67,18 +66,25 @@ class AuthPage extends React.Component {
         photoUrl={this.state.photoUrl}
         name={this.state.name}
         logout={this.logout}
-      ></CommonWindowProfile>
+      />
     ) : (
-      <CommonWindowAuth login={this.login} displayError={this.state.loginError}></CommonWindowAuth>
+      <CommonWindowAuth
+        login={this.login}
+        displayError={this.state.loginError}
+      />
     );
 
     return (
       <div className="auth-page">
-        <AuthPageBackground></AuthPageBackground>
+        <img
+          className="auth-page__background"
+          src={background}
+          alt="background"
+        />
 
         <div className="auth-page__container">
           <div className="auth-page__content">
-            <AuthPageLogo></AuthPageLogo>
+            <img className="auth-page__logo" src={logo} alt="Mercury" />
 
             <CommonWindow>{commonWindowChildren}</CommonWindow>
           </div>

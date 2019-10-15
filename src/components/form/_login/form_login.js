@@ -52,7 +52,7 @@ class FormLogin extends React.Component {
     let error;
     if (this.state.displayError || this.props.displayError) {
       error = (
-        <FormError classNames="common-window__auth-error">
+        <FormError className="common-window__auth-error">
           E-Mail or password is incorrect
         </FormError>
       );
@@ -64,26 +64,22 @@ class FormLogin extends React.Component {
           type="email"
           name="email"
           placeholder="E-Mail"
-          classNames="common-window__auth-input"
+          className="common-window__auth-input"
           handleChange={this.handleChange}
-        ></Input>
+        />
         <Input
           type="password"
           name="password"
           placeholder="Password"
-          classNames="common-window__auth-input"
+          className="common-window__auth-input"
           minLength="3"
           maxLength="15"
           handleChange={this.handleChange}
-        ></Input>
+        />
 
         {error}
 
-        <Button
-          buttonType="input"
-          value="Login"
-          classNames="common-window__login-button"
-        ></Button>
+        <Button className="common-window__login-button">Login</Button>
       </form>
     );
   }

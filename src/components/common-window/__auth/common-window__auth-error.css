@@ -1,9 +1,0 @@
-.common-window__auth-error {
-  margin-top: 32px;
-}
-
-@media screen and (max-width: 650px) {
-  .common-window__auth-error {
-    margin-top: 24px;
-  }
-}

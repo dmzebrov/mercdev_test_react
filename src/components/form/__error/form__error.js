@@ -1,11 +1,15 @@
 import React from "react";
-
 import "./form__error.css";
 
-function FormError(props) {
+import classNames from "classnames";
+
+function FormError({ className, children, ...otherProps }) {
   return (
-    <div id="inputError" className={"form__error " + props.classNames}>
-      <h4>{props.children}</h4>
+    <div
+      className={classNames("form__error", className)}
+      {...otherProps}
+    >
+      <p>{children}</p>
     </div>
   );
 }
