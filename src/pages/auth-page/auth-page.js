@@ -3,8 +3,8 @@ import React from "react";
 import background from "files/background.png";
 import logo from "files/w-mercury-development.svg";
 import CommonWindow from "components/common-window/common-window";
-import CommonWindowAuth from "components/common-window/__auth/common-window__auth";
-import CommonWindowProfile from "components/common-window/__profile/common-window__profile";
+import AuthForm from "pages/auth-page/__auth-form/auth-form";
+import Profile from "pages/auth-page/__profile/profile";
 
 import "./auth-page.css";
 
@@ -62,13 +62,13 @@ class AuthPage extends React.Component {
 
   render() {
     const commonWindowChildren = this.state.loggedIn ? (
-      <CommonWindowProfile
+      <Profile
         photoUrl={this.state.photoUrl}
         name={this.state.name}
         logout={this.logout}
       />
     ) : (
-      <CommonWindowAuth
+      <AuthForm
         login={this.login}
         displayError={this.state.loginError}
       />
