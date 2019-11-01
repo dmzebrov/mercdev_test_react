@@ -1,10 +1,10 @@
 import React from "react";
 import Button from "components/button/button";
-import "./common-window__profile.css";
+import "./profile.css";
 
 var pcClasses = require("utilities/pc-classes");
 
-class CommonWindowProfile extends React.Component {
+class Profile extends React.Component {
   componentDidMount() {
     pcClasses.addButtonHoverClass();
   }
@@ -32,4 +32,4 @@ class CommonWindowProfile extends React.Component {
   }
 }
 
-export default CommonWindowProfile;
+export default Profile;

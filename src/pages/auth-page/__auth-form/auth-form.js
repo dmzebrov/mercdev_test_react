@@ -1,10 +1,10 @@
 import React from "react";
 import FormLogin from "components/form/_login/form_login";
-import "./common-window__auth.css";
+import "./auth-form.css";
 
 var pcClasses = require("utilities/pc-classes");
 
-class CommonWindowAuth extends React.Component {
+class AuthForm extends React.Component {
   componentDidMount() {
     pcClasses.addButtonHoverClass();
   }
@@ -23,4 +23,4 @@ class CommonWindowAuth extends React.Component {
   }
 }
 
-export default CommonWindowAuth;
+export default AuthForm;
